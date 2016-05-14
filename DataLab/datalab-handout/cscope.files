@@ -1,0 +1,8 @@
+./bits.c
+./btest.h
+./btest.c
+./bits.h
+./decl.c
+./tests.c
+./fshow.c
+./ishow.c

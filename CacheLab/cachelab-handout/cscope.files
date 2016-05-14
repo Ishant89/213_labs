@@ -1,0 +1,13 @@
+./contracts.h
+./cachelab.c
+./cachelab.h
+./test-trans.c
+./tracegen.c
+./tmp/temp.c
+./tmp/temp.h
+./csim.h
+./csim_lib.c
+./trans.c
+./test.c
+./csim.c
+./trans1.c

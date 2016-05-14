@@ -1,0 +1,98 @@
+Using default tracefiles in ./traces/
+Measuring performance with a cycle counter.
+Processor clock rate ~= 2261.0 MHz
+Bucket pointer is 0x800000000 and number of buckets are 8
+Value at element 0 is (nil) and ptr is 0x800000000
+Value at element 1 is (nil) and ptr is 0x800000004
+Value at element 2 is (nil) and ptr is 0x800000008
+Value at element 3 is (nil) and ptr is 0x80000000c
+Value at element 4 is (nil) and ptr is 0x800000010
+Value at element 5 is (nil) and ptr is 0x800000014
+Value at element 6 is (nil) and ptr is 0x800000018
+Value at element 7 is (nil) and ptr is 0x80000001c
+Entering extend_heap
+New block created--block(bp, size) : 0x800000030,64
+Exiting extend_heap after coalesce
+entering coalesce 0x800000030
+Entering findList with size 64
+Start is pointing to elem (nil) and list is 3
+setting the bucket pointer to 3
+entering movFree
+prev Start of list is (nil)
+Start of list is 0x800000030 and next should be prev Start : (nil)
+exiting movFree
+Entering update list
+prev bucket is 3 and bucket points to 0x800000030
+Exiting update list and bucket_number set to 0x800000030
+exiting coalesce
+Malloc starting 
+Size is 16
+Block - words 6 and actual block size 24
+Entering findList with size 24
+Start is pointing to elem (nil) and list is 0
+setting the bucket pointer to 0
+list set to  (nil)
+Entering find_fit 
+Block not found & heap will be extended
+Exiting find_fit 
+Entering extend_heap
+New block created--block(bp, size) : 0x800000070,64
+Exiting extend_heap after coalesce
+entering coalesce 0x800000070
+Entering findList with size 64
+Start is pointing to elem 0x800000030 and list is 3
+setting the bucket pointer to 3
+Entering join method with bp as 0x800000070 and next as 0
+Next Blk starts at (nil) and prev blk starts at (nil)
+The only block in the free list
+Exiting join method with bp as 0x800000070 and next as 0
+Entering update list
+prev bucket is 3 and bucket points to (nil)
+Exiting update list and bucket_number set to (nil)
+Size becomes 128 and located at 0x800000030
+Entering findList with size 128
+Start is pointing to elem (nil) and list is 7
+setting the bucket pointer to 7
+entering movFree
+prev Start of list is (nil)
+Start of list is 0x800000030 and next should be prev Start : (nil)
+exiting movFree
+Entering update list
+prev bucket is 7 and bucket points to 0x800000030
+Exiting update list and bucket_number set to 0x800000030
+exiting coalesce
+Entering findList with size 64
+Start is pointing to elem (nil) and list is 3
+setting the bucket pointer to 3
+Entering place 
+Entering join method with bp as 0x800000030 and next as 2
+Next Blk starts at (nil) and prev blk starts at (nil)
+The only block in the free list
+Exiting join method with bp as 0x800000030 and next as 2
+Entering update list
+prev bucket is 3 and bucket points to (nil)
+Exiting update list and bucket_number set to (nil)
+Entering findList with size 104
+Start is pointing to elem (nil) and list is 5
+setting the bucket pointer to 5
+entering movFree
+prev Start of list is (nil)
+Start of list is 0x800000048 and next should be prev Start : (nil)
+exiting movFree
+Entering update list
+prev bucket is 5 and bucket points to 0x800000048
+Exiting update list and bucket_number set to 0x800000048
+Block is split and other half is at 0x800000048 with size 104
+start is (nil)
+Exiting place 
+Malloc ending 
+Malloc starting 
+Size is 1234
+Block - words 312 and actual block size 1248
+Entering findList with size 1248
+Start is pointing to elem 0x800000030 and list is 7
+setting the bucket pointer to 7
+list set to  0x800000030
+Entering find_fit 
+ checking at 0x800000030 for asize is  1248 and free node is 24
+ next in the list is 0x5dd631b4ff8fd5e2 and prev in the list is 0xa8b8a0fa409d624d
